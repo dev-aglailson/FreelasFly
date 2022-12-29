@@ -1,0 +1,110 @@
+@use 'v';
+.content-principal{
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
+    grid-template-rows: 
+                    [inicio-section-home] auto [fim-section-home] 90px
+                    [inicio-section-servicos] auto [fim-section-servicos] 10px
+                    [inicio-section-portfolio] auto [fim-section-portfolio] 10px/* 
+                    [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px 
+                    [inicio-section-time] min(100vh) [fim-section-time] 10px
+                    */
+                    [inicio-section-contato] min(100vh) [fim-section-contato] 10px
+                    ;
+        .section{
+            margin-bottom: 40px;
+            padding-top: 30px;
+            .box-title-section{
+                width: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+        
+                .intro-section{
+                    font-family: "Work Sans",sans-serif;
+                    color: #898798;
+                    letter-spacing: 3px;
+                    text-align: center;
+                }
+                .title-section{
+                    margin-bottom: 20px;
+                    font-family: "Work Sans",sans-serif;
+                    font-weight: 600;
+                    color: #333;
+                }
+                .separator-title-section{
+                    display: flex;
+                    width: 60px;
+                    height: 4px;
+                    background-color: #00aaff;
+                    align-self: left;
+                }
+            }   
+        }
+}
+
+.content-btn-whatsapp-volta-topo{
+    position: fixed;
+    right: v.$padding-x-rigth-padrao;
+    bottom:v.$padding-y-bottom-padrao;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn-whatsapp{
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            font-size: 1.8em;
+            background: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+        }
+    }
+    .btn-volta-top{
+        width: 90%;
+        padding: 5px 7px;
+        border: 1px solid v.$cor-branco;
+        cursor: pointer;
+        background-color: v.$cor-azul-claro;
+        color: v.$cor-branco;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .btn-volta-top-visivel{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .content-principal{
+        position: relative;
+        display: grid;
+        grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
+        grid-template-rows: 
+                        [inicio-section-home] auto [fim-section-home]60px
+                        [inicio-section-servicos] min(100vh) [fim-section-servicos]10px
+                        [inicio-section-portfolio] auto [fim-section-portfolio]10px
+                       /*  [inicio-section-sobre] min(100vh) [fim-section-sobre]10px
+                        [inicio-section-time] min(100vh) [fim-section-time]10px */
+                        [inicio-section-contato] min(100vh) [fim-section-contato]10px
+                        ;
+    }
+
+
+
+}

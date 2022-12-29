@@ -1,0 +1,38 @@
+.section-servicos {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-servicos/fim-section-servicos;
+}
+.section-servicos .box-servico {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+}
+.section-servicos .box-servico .icon-servico {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+.section-servicos .box-servico .icon-servico .icon {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-servicos .box-servico .title-servico {
+  font-family: "Work Sans", sans-serif;
+  font-weight: lighter;
+  color: #333;
+  font-size: 20px;
+}
+.section-servicos .box-servico .subtitle-servico {
+  width: 90%;
+  text-align: center;
+  color: #898798;
+}
+
+/*# sourceMappingURL=section-servicos.css.map */

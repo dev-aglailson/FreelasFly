@@ -1,0 +1,364 @@
+@use 'v';
+
+.paraliza-body{
+    overflow: hidden;
+}
+
+.cabecalho-branco{
+    background-color:rgba(255,255,255,1);
+    box-shadow: 1px 1px 2px #00aaff;
+    
+}
+
+.content-cabecalho{
+    width: 100%;
+    padding: v.$padding-cabecalho;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 1px 1px 2px #00aaff;
+    background-color: #fff;
+
+    .content-logo-btn-menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0px;
+            width: 30px;
+            height: 30px;
+            a{
+                display:block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../../img/sistema/logo/logo.svg);
+                background-size: cover;
+            }
+        }
+
+        .logo-escuro{
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0px;
+            width: 30px;
+            height: 30px;
+            a{
+                display:block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../../img/sistema/logo/logo-escura.svg);
+                background-size: cover;
+            }
+        }
+
+        .btn-menu{
+            width: 22px;
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            transition: .3s;
+            cursor: pointer;
+            z-index: 2;
+
+            .linha-btn{
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color:#00aaff;
+                transition: .3s;
+            }
+        }
+        .btn-menu-escuro{
+            
+            .linha-btn{
+                background-color: v.$cor-secundaria;
+            }
+        }
+
+        .btn-menu-aberto{
+            .linha-btn{
+                background-color:#FFF;
+            }
+            justify-content: center;
+            .linha-btn-2{
+                margin-top: -3px;
+                transform: translateX(-100%);
+            }
+            .linha-btn-1{
+                transform: rotate(45deg);
+            }
+            .linha-btn-3{
+                margin-top: -3px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+//Configurações do menu
+
+.content-menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    background-color: rgba(0,0,0,0.5);
+    transition: .3s;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+
+    .menu-principal{
+        width: 270px;
+        height: 100%;
+        background-color: v.$cor-branco;
+        transform: translateX(-50%);
+        transition: .5s;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        .ul-redes-sociais{
+            width: 100%;
+            border-top: 1px solid v.$cinza-claro;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            li{
+                width: 25px;
+                height: 25px;
+                .background-rede-social{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: 80%;
+                    a.link-rede-social{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .ul-items-menu{
+            width: 100%;
+            border-top: 1px solid v.$cinza-claro;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 20px;
+            flex: 1;
+            overflow-y: auto;
+            li.item{
+                width: 100%;
+                a{
+                    width: 100%;
+                    display: block;
+                    padding: 7px 30px;
+                    font-size: .9em;
+                    color: #05151e;
+                }
+            }
+            li.item:hover a{
+                color: #00aaff;
+                background-color: #05151e;
+            }
+        }
+    }
+}
+
+.content-menu-aberto{
+    top:0;
+    left: 0;
+    transition: .3s;
+
+    .menu-principal{
+        transform: translateX(0);
+        transition: .6s;
+    }
+
+    .btn-menu{
+        transition: .3s;
+    }
+}
+
+//Mediaqueries 
+@media screen and (min-width: 990px) {
+    .cabecalho-branco{ //Muda a cor dos itens do menu para cor secundaria 
+    
+        .content-logo-btn-menu{
+            .logo{
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0px;
+                width: 180px;
+                height: 47px;
+                a{
+                    display:block;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url(../../img/sistema/logo/logo-desktop.png);
+                    background-size: cover;
+                }
+            }
+            .logo-escuro{
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0px;
+                width: 180px;
+                height: 47px;
+                a{
+                    display:block;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url(../../img/sistema/logo/logo-desktop.png);
+                    background-size: cover;
+                }
+            }
+    
+            .content-menu{
+    
+                .menu-principal{
+    
+                    .ul-items-menu{
+    
+                        li.item{
+                            a{
+                                color: #05151e;
+                            }
+                        }
+                        li.item:hover a{
+                            color: #00aaff;
+                            background-color: transparent;
+                            text-decoration: underline;
+                        }
+                        li.item:last-child{
+                            a{
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+    
+        }
+        
+    }
+    .content-cabecalho{
+        .content-logo-btn-menu{
+            .logo{
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0px;
+                width: 180px;
+                height: 47px;
+                a{
+                    display:block;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url(../../img/sistema/logo/logo-desktop.png);
+                    background-size: cover;
+                }
+            }
+            .logo-escuro{
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 0px;
+                width: 180px;
+                height: 47px;
+                a{
+                    display:block;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url(../../img/sistema/logo/logo-desktop.png);
+                    background-size: cover;
+                }
+            }
+    
+            .btn-menu{
+                display: none;
+            }
+            
+        }
+    }
+
+    .content-menu{
+        height: 100%;
+        width: auto;
+        position: relative;
+        left: inherit;
+        background-color: inherit;
+        transition: none;
+        
+        .menu-principal {
+            width: auto;
+            background-color: transparent;
+            transform: none;
+            padding: 0;
+            transition: none;
+
+            .ul-items-menu{
+                padding: 0;
+                height: 100%;
+                flex-direction: row;
+                border:none;
+                justify-content: flex-end;
+
+                
+                li.item{
+                    width: auto;
+                    a{
+                        color: #05151e;
+                    }
+                }
+                
+                li.item:hover a{
+                    color: #00aaff;
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+                li.item:last-child{
+                    a{
+                        padding-right: 0;
+                    }
+                }
+            }
+            .ul-redes-sociais{
+                display: none;
+            }
+
+        }
+    }
+}

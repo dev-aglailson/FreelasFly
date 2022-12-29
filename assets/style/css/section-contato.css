@@ -1,0 +1,82 @@
+.section-contato {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-section-contato/fim-section-contato;
+}
+.section-contato .content-canais-atendimento {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.section-contato .content-canais-atendimento .title-content {
+  color: #898798;
+  margin-bottom: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+}
+.section-contato .content-canais-atendimento .lista-meios-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-contato .content-canais-atendimento .lista-meios-contato .item-lista {
+  min-width: 80%;
+  max-width: 80%;
+  margin-bottom: 30px;
+  display: flex;
+}
+.section-contato .content-canais-atendimento .lista-meios-contato .item-lista .icon {
+  display: block;
+  color: #00aaff;
+  margin-right: 20px;
+}
+.section-contato .content-canais-atendimento .lista-meios-contato .item-lista .content-texto {
+  color: #898798;
+}
+.section-contato .content-formulario-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-contato .content-formulario-contato .formulario-contato {
+  width: 100%;
+}
+.section-contato .content-formulario-contato .formulario-contato .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.section-contato .content-formulario-contato .formulario-contato .form-group .ipt {
+  outline: none;
+  font-family: "Open sans", sans-serif;
+  color: #333;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  letter-spacing: 3px;
+  flex: 1;
+  resize: none;
+}
+.section-contato .content-formulario-contato .formulario-contato .form-group .btn-enviar {
+  border: 1px solid #FFF;
+  background: #00aaff;
+  padding: 10px 35px;
+  color: #FFF;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-contato .content-canais-atendimento .title-content {
+    text-align: left;
+  }
+  .section-contato .content-canais-atendimento .lista-meios-contato {
+    align-items: flex-start;
+  }
+  .section-contato .content-formulario-contato {
+    justify-content: flex-end;
+  }
+}
+
+/*# sourceMappingURL=section-contato.css.map */
