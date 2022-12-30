@@ -7,7 +7,6 @@
     grid-template-rows: 
                     [inicio-section-home] auto [fim-section-home] 90px;
         .section{
-            margin-bottom: 40px;
             padding-top: 30px;
             .box-title-section{
                 width: auto;
@@ -88,7 +87,7 @@
         position: relative;
         display: grid;
         grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-        grid-template-rows:[inicio-section-home] auto [fim-section-home]60px
+        grid-template-rows:[inicio-section-home] auto [fim-section-home]
     }
 
 
