@@ -1,15 +1,15 @@
-.content-principal {
+.content-portfolio {
   width: 100%;
   position: relative;
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-  grid-template-rows: [inicio-section-home] auto [fim-section-home] 90px;
+  grid-template-rows: [inicio-section-portfolioss] auto [fim-section-portfolio] 10px;
 }
-.content-principal .section {
+.content-portfolio .section {
   margin-bottom: 40px;
   padding-top: 30px;
 }
-.content-principal .section .box-title-section {
+.content-portfolio .section .box-title-section {
   width: auto;
   display: flex;
   justify-content: center;
@@ -17,19 +17,19 @@
   align-items: center;
   margin-bottom: 50px;
 }
-.content-principal .section .box-title-section .intro-section {
+.content-portfolio .section .box-title-section .intro-section {
   font-family: "Work Sans", sans-serif;
   color: #898798;
   letter-spacing: 3px;
   text-align: center;
 }
-.content-principal .section .box-title-section .title-section {
+.content-portfolio .section .box-title-section .title-section {
   margin-bottom: 20px;
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   color: #333;
 }
-.content-principal .section .box-title-section .separator-title-section {
+.content-portfolio .section .box-title-section .separator-title-section {
   display: flex;
   width: 60px;
   height: 4px;
@@ -78,8 +78,8 @@
     position: relative;
     display: grid;
     grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-    grid-template-rows: [inicio-section-home] auto [fim-section-home] 60px;
+    grid-template-rows: [inicio-section-portfolio] auto [fim-section-portfolio] 10px;
   }
 }
 
-/*# sourceMappingURL=grid-principal.css.map */
+/*# sourceMappingURL=grid-portfolio.css.map */

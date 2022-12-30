@@ -39,11 +39,9 @@ window.addEventListener('load', function(){
     itensMenu.forEach(item =>{
 
         item.addEventListener('click', function(e){
-
             let linkInterno = item.getAttribute('linkInterno')
             
             if(linkInterno == "true"){
-
                 e.preventDefault()
 
                 autoScrollMenu(item)

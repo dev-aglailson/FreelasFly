@@ -2,7 +2,6 @@
 .section-portfolio{
     grid-column: inicio-left / fim-rigth;
     grid-row:inicio-section-portfolio/fim-section-portfolio;
-
     .grid-portfolio{
         display: grid;
         grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 5px 1fr) [fim-temp] 30px [fim-rigth];

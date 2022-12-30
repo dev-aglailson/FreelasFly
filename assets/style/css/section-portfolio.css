@@ -42,8 +42,7 @@
   padding: 10px;
   overflow: hidden;
 }
-.section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao {
-  /* Deixar para a proxima versão */
+.section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao { /* Deixar para a proxima versão */
   width: 100%;
   /* display: flex; */
   display: none;

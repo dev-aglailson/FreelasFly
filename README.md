@@ -1,6 +1,10 @@
-# Título do projeto
+# FreelasFly
 
-Um parágrafo da descrição do projeto vai aqui
+Uma plataforma de freelancers ideal para quem precisa de trabalhos com drone, como por exemplo,
+inspeções de obras, videos institucionais, takes para comerciais entre vários outros
+tipos de serviços!
+
+A plataforma possui dois tipos de usuários, contratante e profissional.
 
 ## 🚀 Começando
 

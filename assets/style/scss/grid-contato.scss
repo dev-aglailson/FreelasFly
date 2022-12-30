@@ -1,11 +1,12 @@
 @use 'v';
-.content-principal{
+.content-contato{
     width: 100%;
     position: relative;
     display: grid;
     grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
     grid-template-rows: 
-                    [inicio-section-home] auto [fim-section-home] 90px;
+                    [inicio-section-contato] auto [fim-section-contato] 10px;
+
         .section{
             margin-bottom: 40px;
             padding-top: 30px;
@@ -88,7 +89,7 @@
         position: relative;
         display: grid;
         grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-        grid-template-rows:[inicio-section-home] auto [fim-section-home]60px
+        grid-template-rows: [inicio-section-contato] min(100vh) [fim-section-contato]10px;
     }
 
 
