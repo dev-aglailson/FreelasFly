@@ -10460,6 +10460,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+.content-btn-whatsapp-volta-topo .btn-whatsapp {
+  display: none;
+}
 .content-btn-whatsapp-volta-topo .btn-whatsapp .btn {
   display: flex;
   justify-content: center;
@@ -10482,7 +10485,7 @@ a {
   display: none;
 }
 .content-btn-whatsapp-volta-topo .btn-volta-top-visivel {
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

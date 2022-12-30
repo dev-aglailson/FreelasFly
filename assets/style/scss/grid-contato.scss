@@ -50,6 +50,7 @@
     justify-content: center;
     align-items: center;
     .btn-whatsapp{
+        display: none;
         .btn{
             display: flex;
             justify-content: center;
@@ -74,7 +75,7 @@
     }
 
     .btn-volta-top-visivel{
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
