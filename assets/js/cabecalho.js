@@ -215,14 +215,6 @@ window.addEventListener('load', function(){
             behavior:'smooth'
         })
 
-
-        //Verifica se a tela ta mobile | caso sim fecha o menu n ação do scroll
-        if(window.matchMedia("(max-width:990px)").matches){
-
-            toggleMenu()
-
-        }
-
         
     }
 

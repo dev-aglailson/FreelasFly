@@ -10959,7 +10959,6 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 @media screen and (min-width: 720px) {
   .section-home .container-titles-imagem .box-titles {
     margin-top: 0px;
@@ -11029,8 +11028,54 @@ a {
 .section-servicos {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-servicos/fim-section-servicos;
+  margin-bottom: 40px;
+  padding-top: 30px;
 }
-.section-servicos .box-servico {
+.section-servicos .container-servicos {
+  padding-top: 50px;
+}
+.section-servicos .container-servicos .box-title-section {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section-servicos .container-servicos .box-title-section .intro-section {
+  font-family: "Work Sans", sans-serif;
+  color: #898798;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 0 5%;
+}
+.section-servicos .container-servicos .box-title-section .title-section {
+  margin-bottom: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+.section-servicos .container-servicos .box-title-section .separator-title-section {
+  display: flex;
+  width: 60px;
+  height: 4px;
+  background-color: #00aaff;
+  align-self: left;
+}
+.section-servicos .container-servicos .box-intro-texto-pagina {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-servicos .container-servicos .box-intro-texto-pagina .intro-texto-pagina {
+  color: #444;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.section-servicos .container-servicos .box-servico {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -11038,31 +11083,44 @@ a {
   margin-bottom: 30px;
   box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
 }
-.section-servicos .box-servico .icon-servico {
+.section-servicos .container-servicos .box-servico .icon-servico {
   display: flex;
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
 }
-.section-servicos .box-servico .icon-servico .icon {
+.section-servicos .container-servicos .box-servico .icon-servico .icon {
   width: 100%;
   height: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.section-servicos .box-servico .title-servico {
+.section-servicos .container-servicos .box-servico .title-servico {
   font-family: "Work Sans", sans-serif;
   font-weight: lighter;
   color: #333;
   font-size: 20px;
 }
-.section-servicos .box-servico .subtitle-servico {
+.section-servicos .container-servicos .box-servico .subtitle-servico {
   width: 90%;
   text-align: center;
   color: #898798;
 }
 
+@media screen and (min-width: 768px) {
+  .section-servicos .container-servicos .box-title-section {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .section-servicos .container-servicos .box-title-section .intro-section {
+    max-width: 700px;
+  }
+}
 .section-portfolio {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-portfolio/fim-section-portfolio;
