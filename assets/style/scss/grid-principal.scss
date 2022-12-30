@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
     grid-template-rows: 
-                    [inicio-section-home] auto [fim-section-home] 90px;
+                    [inicio-section-home] min(100vh) [fim-section-home] 90px;
         .section{
             padding-top: 30px;
             .box-title-section{

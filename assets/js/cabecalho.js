@@ -9,7 +9,7 @@ window.addEventListener('load', function(){
     var menuAberto = false
     var posicaoScrollAtual = 0
     var cabecalhoBranco = false
-    var itensMenu = document.querySelectorAll('.item')
+    var btnsLinksInternos = document.querySelectorAll('.btn-item-link-interno')
 
 
     
@@ -36,15 +36,15 @@ window.addEventListener('load', function(){
 
     })
 
-    itensMenu.forEach(item =>{
-
+    btnsLinksInternos.forEach(item =>{
         item.addEventListener('click', function(e){
             let linkInterno = item.getAttribute('linkInterno')
+            console.log(item)
             
             if(linkInterno == "true"){
                 e.preventDefault()
 
-                autoScrollMenu(item)
+                autoScrollLinksInterno(item)
                 
             }
 
@@ -173,6 +173,34 @@ window.addEventListener('load', function(){
     function autoScrollMenu(itemMenu){
 
         let seletor = itemMenu.querySelector('a').getAttribute("href")
+
+        let section = document.querySelector(seletor)
+
+        let posicaoSection = section.offsetTop;
+
+        let posPartida = posicaoScrollAtual;
+        let posDestino = posicaoSection;
+
+        window.scrollTo({
+            top:posicaoSection - alturaCabecalho,
+            left:0,
+            behavior:'smooth'
+        })
+
+
+        //Verifica se a tela ta mobile | caso sim fecha o menu n ação do scroll
+        if(window.matchMedia("(max-width:990px)").matches){
+
+            toggleMenu()
+
+        }
+
+        
+    }
+
+    function autoScrollLinksInterno(item){
+
+        let seletor = item.getAttribute("href")
 
         let section = document.querySelector(seletor)
 
