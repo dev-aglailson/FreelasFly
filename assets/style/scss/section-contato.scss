@@ -2,85 +2,120 @@
 .section-contato{
     grid-column: inicio-left / fim-rigth;
     grid-row:inicio-section-contato/fim-section-contato;
-    .content-canais-atendimento{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 40px;
-        .title-content{
-            color: #898798;
-            margin-bottom: 20px;
-            font-family: "Work Sans", sans-serif;
-            font-weight: 600;
-        }
-        .lista-meios-contato{
+    .container-canais-atendimento{
+        padding-top: 50px;
+        .box-title-section{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+    
+            .intro-section{
+                font-family: "Work Sans",sans-serif;
+                color: #898798;
+                letter-spacing: 3px;
+                text-align: center;
+            }
+            .title-section{
+                margin-bottom: 20px;
+                font-family: "Work Sans",sans-serif;
+                font-weight: 600;
+                color: #333;
+            }
+            .separator-title-section{
+                display: flex;
+                width: 60px;
+                height: 4px;
+                background-color: #00aaff;
+                align-self: left;
+            }
+        }   
+        .content-canais-atendimento{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            .item-lista{
-                min-width: 80%;
-                max-width: 80%;
-                margin-bottom: 30px;
-                display: flex;
-                .icon{
-                    display: block;
-                    color: #00aaff;
-                    margin-right: 20px;
-                }
-                .content-texto{
-                    color: #898798;
-                }
-            }
-        }
-    }
-    .content-formulario-contato{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .formulario-contato{
-            width: 100%;
-            .form-group{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            margin-bottom: 40px;
+            .title-content{
+                color: #898798;
                 margin-bottom: 20px;
-                .ipt{
-                    outline: none;
-                    font-family: "Open sans", sans-serif;
-                    color: #333;
-                    font-size: 12px;
-                    padding: 10px;
-                    border-radius: 0.25rem;
-                    border: 1px solid #ced4da;
-                    letter-spacing: 3px;
-                    flex: 1;
-                    resize: none;
-                }
-                .btn-enviar{
-                    border: 1px solid #FFF;
-                    background: #00aaff;
-                    padding: 10px 35px;
-                    color: #FFF;
-                    font-size: 14px;
-                    letter-spacing: 3px;
+                font-family: "Work Sans", sans-serif;
+                font-weight: 600;
+            }
+            .lista-meios-contato{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .item-lista{
+                    min-width: 80%;
+                    max-width: 80%;
+                    margin-bottom: 30px;
+                    display: flex;
+                    .icon{
+                        display: block;
+                        color: #00aaff;
+                        margin-right: 20px;
+                    }
+                    .content-texto{
+                        color: #898798;
+                    }
                 }
             }
         }
+        .content-formulario-contato{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .formulario-contato{
+                width: 100%;
+                .form-group{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    .ipt{
+                        outline: none;
+                        font-family: "Open sans", sans-serif;
+                        color: #333;
+                        font-size: 12px;
+                        padding: 10px;
+                        border-radius: 0.25rem;
+                        border: 1px solid #ced4da;
+                        letter-spacing: 3px;
+                        flex: 1;
+                        resize: none;
+                    }
+                    .btn-enviar{
+                        border: 1px solid #FFF;
+                        background: #00aaff;
+                        padding: 10px 35px;
+                        color: #FFF;
+                        font-size: 14px;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+        }
+
     }
 }
 
 @media screen and (min-width: 768px) {
-    .section-contato{
-        .content-canais-atendimento{
-            .title-content{
-                text-align: left;
+    .container-canais-atendimento{
+        .section-contato{
+            .content-canais-atendimento{
+                .title-content{
+                    text-align: left;
+                }
+                .lista-meios-contato{
+                    align-items: flex-start;
+                }
             }
-            .lista-meios-contato{
-                align-items: flex-start;
+            .content-formulario-contato{
+                justify-content: flex-end;
             }
         }
-        .content-formulario-contato{
-            justify-content: flex-end;
-        }
+        
     }
 
 }

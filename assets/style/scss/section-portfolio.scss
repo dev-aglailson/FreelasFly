@@ -2,158 +2,193 @@
 .section-portfolio{
     grid-column: inicio-left / fim-rigth;
     grid-row:inicio-section-portfolio/fim-section-portfolio;
-    .grid-portfolio{
-        display: grid;
-        grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 5px 1fr) [fim-temp] 30px [fim-rigth];
-        grid-template-rows: 
-        [inicio-job-1] 200px [fim-job-1] 10px 
-        [inicio-job-2] 200px [fim-job-2] 10px
-        [inicio-job-3] 200px [fim-job-3] 10px
-        [inicio-job-4] 200px [fim-job-4] 10px
-        [inicio-job-5] 200px [fim-job-5] 10px
-        [inicio-job-6] 200px [fim-job-6] 10px
-        [inicio-job-7] 200px [fim-job-7] 10px
-        ;
 
-        .job{
-            transition: .3s;
-            grid-column: inicio-left / fim-rigth;
-            background-color: #CCC;
-            border-radius: 4px;
-            overflow: hidden;
-            position: relative;
-            transition: .5s;
-            cursor: pointer;
-            .background-job{
-                width: 100%;
-                height: 100%;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                position: absolute;
-                top:0;
-                left: 0;
-                transition: .5s;
-                
+    .container-portfolio{
+        padding-top: 50px;
+        .box-title-section{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+    
+            .intro-section{
+                font-family: "Work Sans",sans-serif;
+                color: #898798;
+                letter-spacing: 3px;
+                text-align: center;
             }
-
-            .box-informacoes{
-                position: absolute;
-                top:0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            .title-section{
+                margin-bottom: 20px;
+                font-family: "Work Sans",sans-serif;
+                font-weight: 600;
+                color: #333;
+            }
+            .separator-title-section{
                 display: flex;
-                flex-direction: column;
-                /* justify-content: space-between; */
-                justify-content: flex-end;
-                padding: 10px;
+                width: 60px;
+                height: 4px;
+                background-color: #00aaff;
+                align-self: left;
+            }
+        }  
+        .grid-portfolio{
+            display: grid;
+            grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 5px 1fr) [fim-temp] 30px [fim-rigth];
+            grid-template-rows: 
+            [inicio-job-1] 200px [fim-job-1] 10px 
+            [inicio-job-2] 200px [fim-job-2] 10px
+            [inicio-job-3] 200px [fim-job-3] 10px
+            [inicio-job-4] 200px [fim-job-4] 10px
+            [inicio-job-5] 200px [fim-job-5] 10px
+            [inicio-job-6] 200px [fim-job-6] 10px
+            [inicio-job-7] 200px [fim-job-7] 10px
+            ;
+    
+            .job{
+                transition: .3s;
+                grid-column: inicio-left / fim-rigth;
+                background-color: #CCC;
+                border-radius: 4px;
                 overflow: hidden;
-                .icon-coracao{ /* Deixar para a proxima versão */
+                position: relative;
+                transition: .5s;
+                cursor: pointer;
+                .background-job{
                     width: 100%;
-                    /* display: flex; */
-                    display: none;
-                    justify-content: flex-end;
-                    span{
-                        cursor: pointer;
-                        color: #FFF;
-                    }
-                }
-                .icon-coracao-active{
-                    span{
-                        color: #FF007f;
-                    }
-                }
-                .titles{
-                    /* display: flex; */
-                    display: none;
-                    flex-direction: column;
-
-                    .title{
-                        color: #FFF;
-                        font-size: 18px;
-                        font-weight: bold;
-                    }
-                    .subtitle{
-                        font-size: 14px;
-                        color: #00aaff;
-                        margin: 0;
-                    }
-                }
-                .div-btn-detalhes{
-                    display: flex;
-                    justify-content: flex-end;
-                    transform: translateY(150%);
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top:0;
+                    left: 0;
                     transition: .5s;
-                    .btn-detalhes{
-                        background-color: #00aaff;
-                        color: #FFF;
-                        font-family: "Work Sans", sans-serif;
-                        letter-spacing: 3px;
-                        text-align: center;
-                        font-size: 12px;
-                        padding: 6px;
-                        border-radius: 2px;
+                    
+                }
+    
+                .box-informacoes{
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    /* justify-content: space-between; */
+                    justify-content: flex-end;
+                    padding: 10px;
+                    overflow: hidden;
+                    .icon-coracao{ /* Deixar para a proxima versão */
+                        width: 100%;
+                        /* display: flex; */
+                        display: none;
+                        justify-content: flex-end;
+                        span{
+                            cursor: pointer;
+                            color: #FFF;
+                        }
+                    }
+                    .icon-coracao-active{
+                        span{
+                            color: #FF007f;
+                        }
+                    }
+                    .titles{
+                        /* display: flex; */
+                        display: none;
+                        flex-direction: column;
+    
+                        .title{
+                            color: #FFF;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        .subtitle{
+                            font-size: 14px;
+                            color: #00aaff;
+                            margin: 0;
+                        }
+                    }
+                    .div-btn-detalhes{
+                        display: flex;
+                        justify-content: flex-end;
+                        transform: translateY(150%);
+                        transition: .5s;
+                        .btn-detalhes{
+                            background-color: #00aaff;
+                            color: #FFF;
+                            font-family: "Work Sans", sans-serif;
+                            letter-spacing: 3px;
+                            text-align: center;
+                            font-size: 12px;
+                            padding: 6px;
+                            border-radius: 2px;
+                        }
                     }
                 }
             }
+            .job:hover .background-job{
+                transition: .5s;
+                transform: scale(1.06);
+                background-position: center center;
+            }
+            .job:hover .div-btn-detalhes{
+                transform: translateY(0);
+                transition: .5s;
+            }
+            .job-1{grid-row:inicio-job-1 / fim-job-1;}
+            .job-2{grid-row:inicio-job-2 / fim-job-2;}
+            .job-3{grid-row:inicio-job-3 / fim-job-3;}
+            .job-4{grid-row:inicio-job-4 / fim-job-4;}
+            .job-5{grid-row:inicio-job-5 / fim-job-5;}
+            .job-6{grid-row:inicio-job-6 / fim-job-6;}
+            .job-7{grid-row:inicio-job-7 / fim-job-7;}
         }
-        .job:hover .background-job{
-            transition: .5s;
-            transform: scale(1.06);
-            background-position: center center;
-        }
-        .job:hover .div-btn-detalhes{
-            transform: translateY(0);
-            transition: .5s;
-        }
-        .job-1{grid-row:inicio-job-1 / fim-job-1;}
-        .job-2{grid-row:inicio-job-2 / fim-job-2;}
-        .job-3{grid-row:inicio-job-3 / fim-job-3;}
-        .job-4{grid-row:inicio-job-4 / fim-job-4;}
-        .job-5{grid-row:inicio-job-5 / fim-job-5;}
-        .job-6{grid-row:inicio-job-6 / fim-job-6;}
-        .job-7{grid-row:inicio-job-7 / fim-job-7;}
     }
 }
 
 @media screen and (min-width: 767px){
     .section-portfolio{
-        .grid-portfolio{
-            grid-template-columns: 
-            [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3,5px 1fr)[fim-jobs-1-4]5px[inicio-jobs-2-5-7] repeat(2,5px 2fr) [fim-job-5]5px[inicio-job-6] repeat(2, 5px 2fr) [fim-job-2]5px[inicio-job-3] 1fr repeat(2, 5px 2fr)[fim-jobs-3-6-7]0px[fim-rigth];
-            grid-template-rows: 
-            [inicio-jobs-1-2-3] 150px [fim-jobs-1-2-3]5px
-            [inicio-jobs-4-5-6]150px[fim-jobs-5-6]5px
-            [inicio-job-7]160px[fim-jobs-4-7];
+        .container-portfolio{
 
-            .job-1{
-                grid-column: inicio-jobs-1-4 / fim-jobs-1-4;
-                grid-row:inicio-jobs-1-2-3 / fim-jobs-1-2-3;
-            }
-            .job-2{
-                grid-column:inicio-jobs-2-5-7 / fim-job-2;
-                grid-row:inicio-jobs-1-2-3 / fim-jobs-1-2-3;
-            }
-            .job-3{
-                grid-column:inicio-job-3 / fim-jobs-3-6-7;
-                grid-row:inicio-jobs-1-2-3 / fim-jobs-1-2-3;
-            }
-            .job-4{
-                grid-column:inicio-jobs-1-4 / fim-jobs-1-4;
-                grid-row:inicio-jobs-4-5-6 / fim-jobs-4-7;
-            }
-            .job-5{
-                grid-column: inicio-jobs-2-5-7 / fim-job-5;
-                grid-row:inicio-jobs-4-5-6 / fim-jobs-5-6;
-            }
-            .job-6{
-                grid-column: inicio-job-6 / fim-jobs-3-6-7;
-                grid-row:inicio-jobs-4-5-6 / fim-jobs-5-6;
-            }
-            .job-7{
-                grid-column: inicio-jobs-2-5-7 / fim-jobs-3-6-7;
-                grid-row:inicio-job-7 / fim-job-7;
+            .grid-portfolio{
+                grid-template-columns: 
+                [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3,5px 1fr)[fim-jobs-1-4]5px[inicio-jobs-2-5-7] repeat(2,5px 2fr) [fim-job-5]5px[inicio-job-6] repeat(2, 5px 2fr) [fim-job-2]5px[inicio-job-3] 1fr repeat(2, 5px 2fr)[fim-jobs-3-6-7]0px[fim-rigth];
+                grid-template-rows: 
+                [inicio-jobs-1-2-3] 150px [fim-jobs-1-2-3]5px
+                [inicio-jobs-4-5-6]150px[fim-jobs-5-6]5px
+                [inicio-job-7]160px[fim-jobs-4-7];
+    
+                .job-1{
+                    grid-column: inicio-jobs-1-4 / fim-jobs-1-4;
+                    grid-row:inicio-jobs-1-2-3 / fim-jobs-1-2-3;
+                }
+                .job-2{
+                    grid-column:inicio-jobs-2-5-7 / fim-job-2;
+                    grid-row:inicio-jobs-1-2-3 / fim-jobs-1-2-3;
+                }
+                .job-3{
+                    grid-column:inicio-job-3 / fim-jobs-3-6-7;
+                    grid-row:inicio-jobs-1-2-3 / fim-jobs-1-2-3;
+                }
+                .job-4{
+                    grid-column:inicio-jobs-1-4 / fim-jobs-1-4;
+                    grid-row:inicio-jobs-4-5-6 / fim-jobs-4-7;
+                }
+                .job-5{
+                    grid-column: inicio-jobs-2-5-7 / fim-job-5;
+                    grid-row:inicio-jobs-4-5-6 / fim-jobs-5-6;
+                }
+                .job-6{
+                    grid-column: inicio-job-6 / fim-jobs-3-6-7;
+                    grid-row:inicio-jobs-4-5-6 / fim-jobs-5-6;
+                }
+                .job-7{
+                    grid-column: inicio-jobs-2-5-7 / fim-jobs-3-6-7;
+                    grid-row:inicio-job-7 / fim-job-7;
+                }
             }
         }
     
@@ -164,14 +199,16 @@
 } */
 @media screen and (min-width: 1200px){
     .section-portfolio{
+        .container-portfolio{
+            .grid-portfolio{
+                grid-template-columns: 
+                [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3,5px 1fr)[fim-jobs-1-4]5px[inicio-jobs-2-5-7] repeat(2,5px 2fr) [fim-job-5]5px[inicio-job-6] repeat(2, 5px 2fr) [fim-job-2]5px[inicio-job-3] 1fr repeat(2, 5px 2fr)[fim-jobs-3-6-7]0px[fim-rigth];
+                grid-template-rows: 
+                [inicio-jobs-1-2-3] 200px [fim-jobs-1-2-3]5px
+                [inicio-jobs-4-5-6]200px[fim-jobs-5-6]5px
+                [inicio-job-7]210px[fim-jobs-4-7];
+            }
 
-        .grid-portfolio{
-            grid-template-columns: 
-            [inicio-left] 0px [inicio-jobs-1-4] 1fr repeat(3,5px 1fr)[fim-jobs-1-4]5px[inicio-jobs-2-5-7] repeat(2,5px 2fr) [fim-job-5]5px[inicio-job-6] repeat(2, 5px 2fr) [fim-job-2]5px[inicio-job-3] 1fr repeat(2, 5px 2fr)[fim-jobs-3-6-7]0px[fim-rigth];
-            grid-template-rows: 
-            [inicio-jobs-1-2-3] 200px [fim-jobs-1-2-3]5px
-            [inicio-jobs-4-5-6]200px[fim-jobs-5-6]5px
-            [inicio-job-7]210px[fim-jobs-4-7];
         }
         
     }

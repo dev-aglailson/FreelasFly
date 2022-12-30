@@ -6,37 +6,7 @@
     grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
     grid-template-rows: 
                     [inicio-section-home] min(100vh) [fim-section-home] 90px;
-        .section{
-            padding-top: 30px;
-            .box-title-section{
-                width: auto;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 50px;
-        
-                .intro-section{
-                    font-family: "Work Sans",sans-serif;
-                    color: #898798;
-                    letter-spacing: 3px;
-                    text-align: center;
-                }
-                .title-section{
-                    margin-bottom: 20px;
-                    font-family: "Work Sans",sans-serif;
-                    font-weight: 600;
-                    color: #333;
-                }
-                .separator-title-section{
-                    display: flex;
-                    width: 60px;
-                    height: 4px;
-                    background-color: #00aaff;
-                    align-self: left;
-                }
-            }   
-        }
+
 }
 
 .content-btn-whatsapp-volta-topo{
